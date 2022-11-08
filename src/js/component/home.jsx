@@ -1,25 +1,44 @@
-import React from "react";
+import React, {useState} from "react";
 
 //include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+
 
 //create your first component
 const Home = () => {
+
+	const [clase, setClase] = useState("red")
+
+	const handleClick1 = () => {
+		setClase("red-light-select")
+		setClase2("yellow")
+		setClase3("green")
+	}
+	
+	const [clase2, setClase2] = useState("yellow")
+	const handleClick2 = () => {
+		setClase2("yellow-light-select")
+		setClase("red")
+		setClase3("green")
+	}
+	const [clase3, setClase3] = useState("green")
+	const handleClick3 = () => {
+		setClase3("green-light-select")
+		setClase("red")
+		setClase2("yellow")
+	}
 	return (
-		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
-		</div>
+		<div className="fondo">
+			<div class="text-center"><button onClick={handleClick1}className={clase}></button></div>
+				
+			<div class="text-center"><button onClick={handleClick2}className={clase2}></button></div>
+			
+			<div class="text-center"><button onClick={handleClick3}className={clase3}></button></div>
+
+			</div>
+		
+			
+		
+	
 	);
 };
 
