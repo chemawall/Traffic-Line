@@ -4,8 +4,16 @@
     width: 100px;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-style: dashed;
-    margin-top: 40px;
+    border-radius: 20px;
+    margin: auto;
+    
+}
+
+.poste{
+    background-color: black;
+    width: 10px;
+    height: 100px;
+    margin:auto;
 }
 
 .red{

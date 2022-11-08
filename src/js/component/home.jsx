@@ -27,13 +27,15 @@ const Home = () => {
 		setClase2("yellow")
 	}
 	return (
-		<div className="fondo">
+		<div className="container">
+			<div className="poste">h</div>
+			<div className="fondo">
 			<div class="text-center"><button onClick={handleClick1}className={clase}></button></div>
 				
 			<div class="text-center"><button onClick={handleClick2}className={clase2}></button></div>
 			
 			<div class="text-center"><button onClick={handleClick3}className={clase3}></button></div>
-
+			</div>
 			</div>
 		
 			
